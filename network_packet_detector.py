@@ -1,4 +1,4 @@
-# network_packet_detector.py
+# Note: Change the interface accordingly to your OS and system, in the main function.
 
 import logging
 from scapy.all import sniff, IP, TCP, UDP, Raw
@@ -404,7 +404,7 @@ if __name__ == "__main__":
     # or list them with scapy in a Python shell: `from scapy.all import show_interfaces; show_interfaces()`.
     # You will likely need to run this script with administrator/root privileges
     # (`sudo python3 network_packet_detector.py`) to capture packets.
-    NETWORK_INTERFACE = "en0"
+    NETWORK_INTERFACE = "eth0" # Change the interface accordingly.
 
     # To run indefinitely: count=0
     # To run for a specific number of packets: count=100
